@@ -13,10 +13,16 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Text("Welcome, Username", style: GoogleFonts.poppins(fontSize: 25)),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: Column(
+            children: [
+              Text(
+                "Welcome, Username",
+                style: GoogleFonts.poppins(fontSize: 15),
+              ),
+            ],
+          ),
         ),
       ),
     );
