@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'dart:async';
+import 'package:iconsax/iconsax.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,6 +20,38 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Column(
+          children: [
+            SizedBox(height: 300),
+            //App logo
+            Container(
+              height: 190,
+              width: 190,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(25),
+              ),
+              child: Icon(
+                Iconsax.dollar_circle,
+                color: Colors.lightGreenAccent,
+                size: 96,
+              ),
+            ),
+            SizedBox(height: 10),
+            Text(
+              'Brevity',
+              style: GoogleFonts.nunito(
+                color: Colors.lightGreenAccent,
+                fontSize: 46,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

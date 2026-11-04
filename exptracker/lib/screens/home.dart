@@ -23,9 +23,9 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "Welcome, Username",
-                      style: GoogleFonts.poppins(
-                        fontSize: 16,
+                      "Welcome, Anne Marie",
+                      style: GoogleFonts.nunitoSans(
+                        fontSize: 26,
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                       ),
