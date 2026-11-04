@@ -278,16 +278,22 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         SizedBox(height: 10),
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Icon(Iconsax.car, color: Colors.green),
-                            Text(
-                              'Summer Vacation',
-                              style: GoogleFonts.nunito(
-                                color: Colors.black,
-                                fontSize: 14,
-                                fontWeight: FontWeight.bold,
-                              ),
+                            Row(
+                              children: [
+                                Icon(Iconsax.car, color: Colors.green),
+                                Text(
+                                  'Summer Vacation',
+                                  style: GoogleFonts.nunito(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
                             ),
+                            Icon(Iconsax.arrow_right_1),
                           ],
                         ),
                         SizedBox(height: 30),
