@@ -25,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           children: [
-            SizedBox(height: 300),
+            SizedBox(height: 290),
             //App logo
             Container(
               height: 190,
@@ -44,7 +44,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Text(
               'Brevity',
               style: GoogleFonts.nunito(
-                color: Colors.lightGreenAccent,
+                color: const Color.fromARGB(255, 18, 148, 24),
                 fontSize: 46,
                 fontWeight: FontWeight.bold,
               ),
