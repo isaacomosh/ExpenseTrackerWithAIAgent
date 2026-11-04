@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 13),
+                        SizedBox(height: 18),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
@@ -128,11 +128,12 @@ class _HomePageState extends State<HomePage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  SizedBox(height: 5),
                                   Text(
                                     'Top Up',
                                     style: GoogleFonts.nunito(
                                       color: Colors.grey,
-                                      fontSize: 16,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -156,11 +157,12 @@ class _HomePageState extends State<HomePage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  SizedBox(height: 5),
                                   Text(
                                     'Send',
                                     style: GoogleFonts.nunito(
                                       color: Colors.grey,
-                                      fontSize: 16,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -184,11 +186,12 @@ class _HomePageState extends State<HomePage> {
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
+                                  SizedBox(height: 5),
                                   Text(
                                     'Withdraw',
                                     style: GoogleFonts.nunito(
                                       color: Colors.grey,
-                                      fontSize: 16,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.bold,
                                     ),
                                   ),
@@ -256,15 +259,24 @@ class _HomePageState extends State<HomePage> {
 
                 Container(
                   width: 390,
-                  height: 150,
+                  height: 170,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.grey,
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.2),
+                        blurRadius: 10,
+                        spreadRadius: 2,
+                        offset: const Offset(0, 5),
+                      ),
+                    ],
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Column(
                       children: [
+                        SizedBox(height: 10),
                         Row(
                           children: [
                             Icon(Iconsax.car, color: Colors.green),
@@ -272,12 +284,13 @@ class _HomePageState extends State<HomePage> {
                               'Summer Vacation',
                               style: GoogleFonts.nunito(
                                 color: Colors.black,
-                                fontSize: 16,
+                                fontSize: 14,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                           ],
                         ),
+                        SizedBox(height: 30),
                         Container(
                           width: 390,
                           height: 90,
@@ -291,9 +304,8 @@ class _HomePageState extends State<HomePage> {
                               children: [
                                 Row(
                                   children: [
-                                    Icon(Iconsax.car, color: Colors.green),
                                     Text(
-                                      'Summer Vacation',
+                                      '\$ 15,000',
                                       style: GoogleFonts.nunito(
                                         color: Colors.black,
                                         fontSize: 16,
