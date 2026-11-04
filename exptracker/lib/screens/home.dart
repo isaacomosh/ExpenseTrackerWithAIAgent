@@ -267,7 +267,7 @@ class _HomePageState extends State<HomePage> {
                       BoxShadow(
                         color: Colors.black.withOpacity(0.2),
                         blurRadius: 10,
-                        spreadRadius: 2,
+                        spreadRadius: 1,
                         offset: const Offset(0, 5),
                       ),
                     ],
@@ -313,20 +313,43 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.white,
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(20.0),
+                            padding: const EdgeInsets.all(14.0),
                             child: Column(
                               children: [
                                 Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
                                       '\$ 15,000',
                                       style: GoogleFonts.nunito(
                                         color: Colors.black,
-                                        fontSize: 16,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Text(
+                                      '\$ 50,000',
+                                      style: GoogleFonts.nunito(
+                                        color: Colors.grey,
+                                        fontSize: 14,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
                                   ],
+                                ),
+                                SizedBox(
+                                  width: 350,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: LinearProgressIndicator(
+                                      value: 0.6, // Sets the progress to 60%
+                                      backgroundColor: Colors.grey[200],
+                                      valueColor: AlwaysStoppedAnimation<Color>(
+                                        Colors.lightGreenAccent,
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ],
                             ),
