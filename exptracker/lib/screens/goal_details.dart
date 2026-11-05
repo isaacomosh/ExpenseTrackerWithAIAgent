@@ -248,8 +248,8 @@ class _GoalDetailsState extends State<GoalDetails> {
                             width: 45,
                             height: 45,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20),
+                              color: const Color.fromARGB(255, 235, 234, 234),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
