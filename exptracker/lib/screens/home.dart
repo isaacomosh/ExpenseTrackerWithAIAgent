@@ -390,7 +390,7 @@ class _HomePageState extends State<HomePage> {
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Text(
-                                        '\ 20 days to go',
+                                        ' 20 days to go',
                                         style: GoogleFonts.nunito(
                                           color: Colors.black,
                                           fontSize: 14,
@@ -523,7 +523,7 @@ class _HomePageState extends State<HomePage> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      '\ 2 years to go',
+                                      ' 2 years to go',
                                       style: GoogleFonts.nunito(
                                         color: Colors.black,
                                         fontSize: 14,
@@ -651,7 +651,7 @@ class _HomePageState extends State<HomePage> {
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Text(
-                                      '\ 20 days to go',
+                                      ' 20 days to go',
                                       style: GoogleFonts.nunito(
                                         color: Colors.black,
                                         fontSize: 14,
