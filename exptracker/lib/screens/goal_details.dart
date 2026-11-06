@@ -1,3 +1,4 @@
+import 'package:exptracker/components/saving_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconsax/iconsax.dart';
@@ -122,7 +123,7 @@ class _GoalDetailsState extends State<GoalDetails> {
               SizedBox(height: 10),
               Container(
                 width: 390,
-                height: 350,
+                height: 370,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.white,
@@ -140,7 +141,7 @@ class _GoalDetailsState extends State<GoalDetails> {
                   children: [
                     Container(
                       width: 390,
-                      height: 100,
+                      height: 90,
                       decoration: BoxDecoration(),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -207,6 +208,7 @@ class _GoalDetailsState extends State<GoalDetails> {
                         ),
                       ),
                     ),
+                    SavingAnalyticsCard(),
                   ],
                 ),
               ),

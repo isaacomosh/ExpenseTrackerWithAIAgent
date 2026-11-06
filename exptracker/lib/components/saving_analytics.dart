@@ -59,10 +59,10 @@ class SavingAnalyticsCard extends StatelessWidget {
             ),
           ),
 
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
 
           SizedBox(
-            height: 175,
+            height: 155,
             child: LayoutBuilder(
               builder: (context, constraints) {
                 return CustomPaint(
