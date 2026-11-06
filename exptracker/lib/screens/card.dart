@@ -1,34 +1,35 @@
-import 'package:exptracker/screens/settings.dart';
-import 'package:exptracker/screens/wallets.dart';
 import 'package:flutter/material.dart';
 
-class Card extends StatefulWidget {
-  const Card({super.key});
+class CardScreen extends StatefulWidget {
+  const CardScreen({super.key});
 
   @override
-  State<Card> createState() => _CardState();
+  State<CardScreen> createState() => _CardScreenState();
 }
 
-class _CardState extends State<Card> {
+class _CardScreenState extends State<CardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
-        scrollDirection: Axis.horizontal,
-        children: [
-          Container(
-            color: Colors.red,
-            child: const Center(child: Text("Page 1")),
-          ),
-          Container(
-            color: Colors.blue,
-            child: const Center(child: Text("Page 2")),
-          ),
-          Container(
-            color: Colors.green,
-            child: const Center(child: Text("Page 3")),
-          ),
-        ],
+      appBar: AppBar(title: const Text("My Cards")),
+      body: SizedBox.expand(
+        child: PageView(
+          scrollDirection: Axis.horizontal,
+          children: [
+            Container(
+              color: Colors.red,
+              child: const Center(child: Text("Page 1")),
+            ),
+            Container(
+              color: Colors.blue,
+              child: const Center(child: Text("Page 2")),
+            ),
+            Container(
+              color: Colors.green,
+              child: const Center(child: Text("Page 3")),
+            ),
+          ],
+        ),
       ),
     );
   }
